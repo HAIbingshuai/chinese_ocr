@@ -12,18 +12,11 @@
     
     
 项目感谢：
-chineseocr https://github.com/chineseocr/chineseocr
-
-yolo3 https://github.com/pjreddie/darknet.git
-
-crnn https://github.com/meijieru/crnn.pytorch.git
-
-ctpn https://github.com/eragonruan/text-detection-ctpn
-
+chineseocr https://github.com/chineseocr/chineseocr 
+yolo3 https://github.com/pjreddie/darknet.git 
+crnn https://github.com/meijieru/crnn.pytorch.git 
+ctpn https://github.com/eragonruan/text-detection-ctpn 
 CTPN https://github.com/tianzhi0549/CTPN
-
 keras yolo3 https://github.com/qqwweee/keras-yolo3.git
-
 darknet keras 模型转换参考 参考：https://www.cnblogs.com/shouhuxianjian/p/10567201.html
-
 语言模型实现 https://github.com/lukhy/masr
