@@ -9,7 +9,7 @@
 from Angle_model_file.detect_ANGLE import text_ANGLE
 from Text_A_yolo_model_file.text_YOLO import text_Yolo
 from Text_B_ocr_crnn_model_file.text_OCR import text_OCR
-from z_chinese_ocr.config import config
+from Total_chinese_ocr.config import config
 from Text_B_ocr_crnn_model_file.component.image import rotate_cut_img, union_rbox, adjust_box_to_origin
 from PIL import Image
 import cv2
