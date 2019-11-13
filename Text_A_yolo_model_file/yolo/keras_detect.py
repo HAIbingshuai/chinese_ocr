@@ -27,7 +27,7 @@ input_shape = K.placeholder(shape=(2,))  ##图像resize尺寸:h,w
 box_score = box_layer([*textModel.output, image_shape, input_shape], anchors, num_classes)
 
 
-def text_detect(img, scale, maxScale, prob=0.05):
+def text_detect(img, scale=600, maxScale=900, prob=0.05):
     im = Image.fromarray(img)
     w, h = im.size
     # 短边固定为608,长边max_scale<4000

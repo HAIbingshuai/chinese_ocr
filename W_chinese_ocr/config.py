@@ -9,9 +9,7 @@
 
 from easydict import EasyDict as edict
 from Text_B_ocr_crnn_model_file.crnn.chinese_english_keys import *
-import os
 
-dir_path = os.path.dirname(os.path.abspath(__file__))
 config = edict()
 
 # GPU是否实用
@@ -26,6 +24,6 @@ config.ChineseModel = True
 config.LstmFlag = True
 
 # 参数设置
-config.ocrModelKerasDense = os.path.join(dir_path, 'models/keras_h5/ocr-dense.h5')  # LSTMFLAG = False
-config.ocrModelKerasLstm = os.path.join(dir_path, 'models/keras_h5/ocr-lstm.h5')  # LSTMFLAG = True
-config.ocrModelKerasEng = os.path.join(dir_path, 'models/keras_h5/ocr-english.h5')  # ChineseModel = False
+config.ocrModelKerasDense = './models/keras_h5/ocr-dense.h5'  # LSTMFLAG = False
+config.ocrModelKerasLstm = './models/keras_h5/ocr-lstm.h5'  # LSTMFLAG = True
+config.ocrModelKerasEng = './models/keras_h5/ocr-english.h5'  # ChineseModel = False

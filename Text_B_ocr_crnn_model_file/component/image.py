@@ -384,6 +384,7 @@ def adjust_box_to_origin(img, angle, result):
     else:
         imgH, imgW = img.shape[:2]
     newresult = []
+    boxe_xylist = []
     for line in result:
         cx = line['box']['cx']
         cy = line['box']['cy']
@@ -395,5 +396,6 @@ def adjust_box_to_origin(img, angle, result):
                                                     imgH=imgH, imgW=imgW)
         box = x1, y1, x2, y2, x3, y3, x4, y4
         newresult.append({'name': line['name'], 'text': line['text'], 'box': box})
+        boxe_xylist.append([[x1, y1], [x2, y2], [x3, y3], [x4, y4]])
 
-    return newresult
+    return newresult, boxe_xylist

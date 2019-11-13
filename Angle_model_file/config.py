@@ -8,13 +8,15 @@
 # ================================================================
 
 from easydict import EasyDict as edict
+import os
 
+dir_path = os.path.dirname(os.path.abspath(__file__))
 config = edict()
 
-config.AngleModelPb = '../Angle_model_file/models/Angle-model.pb'
-config.AngleModelPbtxt = '../Angle_model_file/models/Angle-model.pbtxt'
-config.yoloCfg = '../Angle_model_file/models/text.cfg'
-config.yoloWeights = '../Angle_model_file/models/text.weights'
+config.AngleModelPb = os.path.join(dir_path, 'models/Angle-model.pb')
+config.AngleModelPbtxt = os.path.join(dir_path, 'models/Angle-model.pbtxt')
+config.yoloCfg = os.path.join(dir_path, 'models/text.cfg')
+config.yoloWeights = os.path.join(dir_path, 'models/text.weights')
 
 # opencv(cpu) or tf(gpu)
 config.AngleModelFlag = 'tf'
